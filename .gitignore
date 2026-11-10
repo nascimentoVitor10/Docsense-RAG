@@ -1,0 +1,36 @@
+
+@'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local data
+data/raw/
+data/processed/
+'@ | Set-Content -Path .gitignore -Encoding utf8
+
+# banco vetorial local  do Qdrant
+data/qdrant/
+
